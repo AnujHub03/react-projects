@@ -3,19 +3,25 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { createBrowserRouter, createRoutesFromElements, Navigate, Route, RouterProvider } from 'react-router';
+import Navbar from './Components/MainDashboard/Navbar';
 
 function App() {
   // const [count, setCount] = useState(0)
 
       const r=createBrowserRouter(
     createRoutesFromElements(
-        
+         <Route path='/' element={<Navbar/>}>
+
+          {/* Navigate to Home Page When You hit a Undefined path / Url */}
+            <Route path='*' element={<Navigate to='/'></Navigate>}></Route>
+            </Route>
     )
   )
   return (
     <>
      <RouterProvider router={r}></RouterProvider> 
-  
+     
+           
     
     </>
   )
