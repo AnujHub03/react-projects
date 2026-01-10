@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { createBrowserRouter, createRoutesFromElements, Navigate, Route, RouterProvider } from 'react-router';
 import Navbar from './Components/MainDashboard/Navbar';
+import HomePage from './Components/MainDashboard/Homepage';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -11,11 +12,12 @@ function App() {
       const r=createBrowserRouter(
     createRoutesFromElements(
          <Route path='/' element={<Navbar/>}>
+            <Route path='/' element={<HomePage/>}></Route>
 
-          {/* Navigate to Home Page When You hit a Undefined path / Url */}
-            <Route path='*' element={<Navigate to='/'></Navigate>}></Route>
-            </Route>
-    )
+                {/* Navigate to Home Page When You hit a Undefined path / Url */}
+                  <Route path='*' element={<Navigate to='/'></Navigate>}></Route>
+                  </Route>
+          )
   )
   return (
     <>
