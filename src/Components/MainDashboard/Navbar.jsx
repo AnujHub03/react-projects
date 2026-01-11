@@ -64,7 +64,8 @@ const Navbar = () => {
        <li>
           <a>Easy Projects</a>
           <ul className="p-2 fontCustom">
-                  </ul>
+             <li className="hover:bg-orange-600 rounded-xl active:bg-primary" onClick={closeAllDetails}><NavLink to="/Project1">Project 1</NavLink></li>
+         </ul>
         </li>
         <li>
           <a>Medium Projects</a>
@@ -87,7 +88,8 @@ const Navbar = () => {
       <li>
         <details ref={addToRefs}>
           <summary className="cursor-pointer">Easy Projects</summary>
-          <ul className="p-2">
+          <ul className="p-2 w-28 text-center">
+             <li className="hover:bg-orange-600 rounded-xl active:bg-primary" onClick={closeAllDetails}><NavLink to="/Project1">Project 1</NavLink></li>
          </ul>
         </details>
       </li>
