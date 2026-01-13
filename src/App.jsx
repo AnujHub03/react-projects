@@ -7,6 +7,7 @@ import Navbar from './Components/MainDashboard/Navbar';
 import HomePage from './Components/MainDashboard/Homepage';
 import Project1 from './Components/Project 1/Project1';
 import Project2 from './Components/Project 2/Project2';
+import Project3 from './Components/Project 3/Project3';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
                {/* Easy Projects */}   
               <Route path='/Project1' element={<Project1/>}></Route>
               <Route path='/Project2' element={<Project2/>}></Route>
+              <Route path='/Project3' element={<Project3 noOfStar={5}/>}></Route>
 
                 {/* Navigate to Home Page When You hit a Undefined path / Url */}
                   <Route path='*' element={<Navigate to='/'></Navigate>}></Route>

@@ -66,6 +66,7 @@ const Navbar = () => {
           <ul className="p-2 fontCustom">
              <li className="hover:bg-orange-600 rounded-xl active:bg-primary" onClick={closeAllDetails}><NavLink to="/Project1">Project 1</NavLink></li>
              <li className="hover:bg-orange-600 rounded-xl active:bg-primary" onClick={closeAllDetails}><NavLink to="/Project2">Project 2</NavLink></li>
+             <li className="hover:bg-orange-600 rounded-xl active:bg-primary" onClick={closeAllDetails}><NavLink to="/Project3">Project 3</NavLink></li>
          </ul>
         </li>
         <li>
@@ -92,6 +93,7 @@ const Navbar = () => {
           <ul className="p-2 w-28 text-center">
              <li className="hover:bg-orange-600 rounded-xl active:bg-primary" onClick={closeAllDetails}><NavLink to="/Project1">Project 1</NavLink></li>
              <li className="hover:bg-orange-600 rounded-xl active:bg-primary" onClick={closeAllDetails}><NavLink to="/Project2">Project 2</NavLink></li>
+             <li className="hover:bg-orange-600 rounded-xl active:bg-primary" onClick={closeAllDetails}><NavLink to="/Project3">Project 3</NavLink></li>
          </ul>
         </details>
       </li>
