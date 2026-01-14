@@ -1,0 +1,27 @@
+[data-theme='dark'] {
+    --background: #121212;
+    --text-primary: #fff;
+    --button-bg: white;
+    --button-text:#000;
+}
+[data-theme='light'] {
+    --background: #ffffff;
+    --text-primary: #000;
+    --button-bg: #000;
+    --button-text:#ffffff;
+}
+body {
+    background-color: var(--background);
+    color: var(--text-primary);
+}
+button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+}
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+h1{
+    color: var(--text-primary) ;
+}
