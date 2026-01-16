@@ -74,7 +74,7 @@ const Navbar = () => {
         <li>
           <a>Medium Projects</a>
           <ul className="p-2">
-          
+            <li className=" hover:bg-orange-600 rounded-xl" onClick={closeAllDetails}><NavLink to="/Project6">Project 6</NavLink></li>
           </ul>
         </li>
         <li>
@@ -104,7 +104,8 @@ const Navbar = () => {
       <li>
         <details ref={addToRefs}>
           <summary className="cursor-pointer">Medium Projects</summary>
-          <ul className="p-2">
+          <ul className="p-2 w-28 text-center">
+              <li className=" hover:bg-orange-600 rounded-xl" onClick={closeAllDetails}><NavLink to="/Project6">Project 6</NavLink></li>
           </ul>
         </details>
       </li>
