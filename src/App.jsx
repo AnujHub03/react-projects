@@ -11,6 +11,7 @@ import Project3 from './Components/Project 3/Project3';
 import Project4 from './Components/Project 4/Project4';
 import Tab from './Components/Project 5/Tab';
 import Project6 from './Components/Project 6/Project6';
+import Project7 from './Components/Project 7/Project7';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -29,6 +30,7 @@ function App() {
 
               {/* Medium Projects */}
               <Route path='/Project6' element={<Project6/>}></Route>
+              <Route path='/Project7' element={<Project7/>}></Route>
 
                 {/* Navigate to Home Page When You hit a Undefined path / Url */}
                   <Route path='*' element={<Navigate to='/'></Navigate>}></Route>
