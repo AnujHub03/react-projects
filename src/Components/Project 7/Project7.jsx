@@ -13,7 +13,7 @@ const Project7 = () => {
     <>
       <div className="text-center min-h-screen bg-[url('../../public/Img/bass.jpg')] bg-cover bg-center"> 
         <div className="text-center text-5xl font-bold pt-10 border-2 border-transparent">
-          <h1>Project 8 </h1>
+          <h1>Project 7 </h1>
         </div>
         
         <div className="text-center m-auto text-3xl mt-10 bg-slate-600 bg-opacity-40">
