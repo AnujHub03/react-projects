@@ -77,6 +77,7 @@ const Navbar = () => {
             <li className=" hover:bg-orange-600 rounded-xl" onClick={closeAllDetails}><NavLink to="/Project6">Project 6</NavLink></li>
             <li className=" hover:bg-orange-600 rounded-xl" onClick={closeAllDetails}><NavLink to="/Project7">Project 7</NavLink></li>
             <li className=" hover:bg-orange-600 rounded-xl" onClick={closeAllDetails}><NavLink to="/Project8">Project 8</NavLink></li>
+            <li className=" hover:bg-orange-600 rounded-xl" onClick={closeAllDetails}><NavLink to="/Project9">Project 9</NavLink></li>
           </ul>
         </li>
         <li>
@@ -110,6 +111,7 @@ const Navbar = () => {
               <li className=" hover:bg-orange-600 rounded-xl" onClick={closeAllDetails}><NavLink to="/Project6">Project 6</NavLink></li>
               <li className=" hover:bg-orange-600 rounded-xl" onClick={closeAllDetails}><NavLink to="/Project7">Project 7</NavLink></li>
               <li className=" hover:bg-orange-600 rounded-xl" onClick={closeAllDetails}><NavLink to="/Project8">Project 8</NavLink></li>
+              <li className=" hover:bg-orange-600 rounded-xl" onClick={closeAllDetails}><NavLink to="/Project9">Project 9</NavLink></li>
           </ul>
         </details>
       </li>
