@@ -1,7 +1,9 @@
 import React, { useRef } from 'react'
+import Test from './Test';
 
 const Project10 = () => {
-   
+    const {data,error,loading }=Test('https://dummyjson.com/products',{});
+    const windowSize=Test();
     const {width,height}=windowSize;
     const bottomRef=useRef(null);     
     function handleScrollToTop() {
@@ -11,9 +13,9 @@ const Project10 = () => {
         bottomRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   return (
-    <div className=" min-h-screen bg-[url('../../../img/abstract.jpg')] bg-cover bg-center"> 
+    <div className=" min-h-screen bg-[url('../../../Img/abstract.jpg')] bg-cover bg-center"> 
         <div className=" text-white p-3  rounded-b-lg shadow-lg">
-            <h1 className="text-3xl font-bold text-center mt-10">Project 11 </h1>
+            <h1 className="text-3xl font-bold text-center mt-10">Project 10 </h1>
         </div>
         <div className="mt-10 text-center">
             <h2 className="text-2xl font-semibold text-center mt-10">Scroll to Top and Bottom feature</h2>
