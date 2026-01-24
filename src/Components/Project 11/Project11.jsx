@@ -1,13 +1,14 @@
 import React, { useRef, useState } from 'react'
+import Modal from './Modal';
 
 
 const Project11 = () => {
       const ref=useRef();
       const [showContent,setShowContent]=useState(false);
-     
+      Modal({ref:ref,handler:()=>setShowContent(false)});
 
   return (
-    <div className=" min-h-screen bg-[url('../../../img/ash.jpg')] bg-cover bg-center p-10">
+    <div className=" min-h-screen bg-[url('../../../Img/ash.jpg')] bg-cover bg-center p-10">
        <div className="text-center text-5xl font-bold pt-10 border-2 border-transparent">
                 <h1>Project 11</h1>
        </div>
