@@ -85,7 +85,9 @@ const Navbar = () => {
         <li>
           <a>Hard Projects</a>
           <ul className="p-2">
-                 </ul>
+            <li className=" hover:bg-orange-600 rounded-xl" onClick={closeAllDetails}><NavLink to="/Navigation">Project 12</NavLink></li>
+
+            </ul>
         </li>
         
       </ul>
@@ -97,7 +99,7 @@ const Navbar = () => {
       <li>
         <details ref={addToRefs}>
           <summary className="cursor-pointer">Easy Projects</summary>
-          <ul className="p-2 w-28 text-center">
+          <ul className="p-2 w-28 text-center z-50">
              <li className="hover:bg-orange-600 rounded-xl active:bg-primary" onClick={closeAllDetails}><NavLink to="/Project1">Project 1</NavLink></li>
              <li className="hover:bg-orange-600 rounded-xl active:bg-primary" onClick={closeAllDetails}><NavLink to="/Project2">Project 2</NavLink></li>
              <li className="hover:bg-orange-600 rounded-xl active:bg-primary" onClick={closeAllDetails}><NavLink to="/Project3">Project 3</NavLink></li>
@@ -109,7 +111,7 @@ const Navbar = () => {
       <li>
         <details ref={addToRefs}>
           <summary className="cursor-pointer">Medium Projects</summary>
-          <ul className="p-2 w-28 text-center">
+          <ul className="p-2 w-28 text-center z-50">
               <li className=" hover:bg-orange-600 rounded-xl" onClick={closeAllDetails}><NavLink to="/Project6">Project 6</NavLink></li>
               <li className=" hover:bg-orange-600 rounded-xl" onClick={closeAllDetails}><NavLink to="/Project7">Project 7</NavLink></li>
               <li className=" hover:bg-orange-600 rounded-xl" onClick={closeAllDetails}><NavLink to="/Project8">Project 8</NavLink></li>
@@ -122,8 +124,10 @@ const Navbar = () => {
       <li>
         <details ref={addToRefs}>
           <summary className="cursor-pointer">Hard Projects</summary>
-          <ul className="p-2">
-                      </ul>
+          <ul className="p-2 w-28 text-center z-50">
+            <li className=" hover:bg-orange-600 rounded-xl" onClick={closeAllDetails}><NavLink to="/Navigation">Project 12</NavLink></li>
+
+          </ul>
         </details>
       </li>
       
