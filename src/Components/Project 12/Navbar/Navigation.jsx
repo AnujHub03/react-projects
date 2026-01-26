@@ -13,7 +13,7 @@ const Navigation = () => {
           <div className="navbar-start md:w-auto">
             <NavLink
               to="Project12"
-              className="btn bg-transparent text-xl text-black"
+              className="btn bg-slate-800 text-gray-200 hover:shadow-slate-300 hover:shadow-lg  hover:translate-x-1 transition-shadow duration-300 text-xl "
             >
               Food Recipe App.
             </NavLink>
@@ -44,7 +44,7 @@ const Navigation = () => {
               <NavLink to="favorites">Favorites</NavLink>
             </li>
             <li>
-              <a>Portfolio</a>
+              {/* <a>Portfolio</a> */}
             </li>
           </ul>
         </div>
