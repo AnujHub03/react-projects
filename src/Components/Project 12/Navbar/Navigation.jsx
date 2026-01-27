@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { NavLink, Outlet } from 'react-router'
+import { GlobalContext } from '../Context/Index';
 
 const Navigation = () => {
+  const {searchParams,setSearchParams ,handelSubmit}=useContext(GlobalContext);
+  console.log(searchParams);
   return (
     <>
       <div className="navbar bg-gray-400 shadow-sm flex flex-col md:flex-row">
@@ -21,10 +24,11 @@ const Navigation = () => {
 
           {/* Search */}
           <div className="navbar-center w-full md:flex-1 mt-2 md:mt-0">
-            <form className="w-full flex justify-center">
+            <form onSubmit ={handelSubmit} className="w-full flex justify-center">
               <input
                 type="text"
                 placeholder="Search..."
+                onChange={(e) => setSearchParams(e.target.value)}
                 className="input input-bordered w-full max-w-md"
               />
             </form>
