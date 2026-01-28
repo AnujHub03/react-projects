@@ -1,14 +1,28 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { GlobalContext } from '../Context/Index'
+import RecipeItem from '../Recipe-Item/Index';
 
 const Project12 = () => {
+  const {loading,recipeList}=useContext(GlobalContext);
+  if(loading){
+    return <div className='flex justify-center items-center h-screen bg-gray-200 text-4xl font-bold text-black'>      
+             Loading... Please Wait !!!
+          </div>
+   }
   return (
     <>
-    <div className='h-screen w-full bg-gray-200'>
+    <div className='h-max min-h-screen w-full bg-gray-200'>
       <div className=" text-4xl font-bold text-black text-center shadow-xl p-10"> <h1>Project12</h1> </div>
-      <div className="text-center text-black text-xl p-10 "><p>Here you can search some recipes for your favorite dishes.  </p>
-      <p>You have to search for recipes as no data is preloaded.</p>
+      <div className="h-full text-center text-black text-xl p-10 "><p>Here you can search some recipes for your favorite dishes.  </p>
+       {
+                recipeList && recipeList.length > 0 
+                ? recipeList.map((item)=>(<RecipeItem item={item} />))
+                :<div className=''>
+                   <p className='p-10 lg:text-4xl text-xl text-center  font-extrabold' >Please search something as data is not preloaded.</p> 
+                    </div>
+            }
       </div>
-    </div>
+    </div> 
     </>
   )
 }

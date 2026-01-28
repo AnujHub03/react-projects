@@ -15,7 +15,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="navbar-start md:w-auto">
             <NavLink
-              to="Project12"
+              to="/Navigation"
               className="btn bg-slate-800 text-gray-200 hover:shadow-slate-300 hover:shadow-lg  hover:translate-x-1 transition-shadow duration-300 text-xl "
             >
               Food Recipe App.
@@ -39,7 +39,7 @@ const Navigation = () => {
         <div className="navbar-end w-full md:w-96 mt-2 md:mt-0">
           <ul className="menu menu-horizontal flex justify-center md:justify-end gap-2 text-xl text-black">
             <li className="hover:bg-teal-400 rounded-xl">
-              <NavLink to="Project12">Home</NavLink>
+              <NavLink to="/Navigation">Home</NavLink>
             </li>
             <li className="hover:bg-teal-400 rounded-xl">
               <NavLink to="details">Details</NavLink>

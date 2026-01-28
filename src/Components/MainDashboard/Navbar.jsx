@@ -85,7 +85,7 @@ const Navbar = () => {
         <li>
           <a>Hard Projects</a>
           <ul className="p-2">
-            <li className=" hover:bg-orange-600 rounded-xl" onClick={closeAllDetails}><NavLink to="/Navigation">Project 12</NavLink></li>
+            <li className=" hover:bg-orange-600 rounded-xl" onClick={closeAllDetails}><NavLink to="Navigation">Project 12</NavLink></li>
 
             </ul>
         </li>

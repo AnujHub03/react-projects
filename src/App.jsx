@@ -44,8 +44,8 @@ function App() {
               <Route path='/Project11' element={<Project11/>}></Route>
 
               {/* Hard Projects */}
-             <Route path='Navigation' element={<Navigation/>}>
-                <Route path='Project12' element={<Project12/>}></Route>
+             <Route path='/Navigation' element={<Navigation/>}>
+                <Route path='/Navigation' element={<Project12/>}></Route>
                 <Route path='details' element={<Details/>}></Route>
              </Route>
 
