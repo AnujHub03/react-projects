@@ -46,7 +46,7 @@ function App() {
               {/* Hard Projects */}
              <Route path='/Navigation' element={<Navigation/>}>
                 <Route path='/Navigation' element={<Project12/>}></Route>
-                <Route path='details' element={<Details/>}></Route>
+                <Route path='details/:id' element={<Details/>}></Route>
              </Route>
 
                 {/* Navigate to Home Page When You hit a Undefined path / Url */}
