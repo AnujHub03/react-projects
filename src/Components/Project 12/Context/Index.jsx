@@ -8,6 +8,7 @@ export default function GlobalState({children}) {
     const [searchParams,setSearchParams]=useState('');
     const [loading,setLoading]=useState(false);
     const [recipeList,setRecipeList]=useState([]);
+    const [recipeDetails,setRecipeDetails]=useState("");
 
     async function handelSubmit(e){
         e.preventDefault();
@@ -31,7 +32,7 @@ export default function GlobalState({children}) {
         }
     }
 
-    return<GlobalContext.Provider value={{searchParams,setSearchParams,handelSubmit,loading,recipeList}}>
+    return<GlobalContext.Provider value={{searchParams,setSearchParams,handelSubmit,loading,recipeList ,recipeDetails,setRecipeDetails}}>
         {children}
     </GlobalContext.Provider>
 }   

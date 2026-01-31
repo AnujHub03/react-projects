@@ -20,7 +20,7 @@ const Project12 = () => {
                 recipeList && recipeList.length > 0 
                 ? recipeList.map((item)=>(<RecipeItem item={item} />))
                 :<div className=''>
-                   <p className='p-10 lg:text-4xl text-xl text-center  font-extrabold' >Please search something as data is not preloaded.</p> 
+                   <p className='p-10 lg:text-4xl text-xl text-center  text-black font-extrabold' >Please search something as data is not preloaded.</p> 
                     </div>
             }
       </div>

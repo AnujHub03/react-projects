@@ -42,7 +42,7 @@ const Navigation = () => {
               <NavLink to="/Navigation">Home</NavLink>
             </li>
             <li className="hover:bg-teal-400 rounded-xl">
-              <NavLink to="details">Details</NavLink>
+              <NavLink to="details/:id">Details</NavLink>
             </li>
             <li className="hover:bg-teal-400 rounded-xl">
               <NavLink to="favorites">Favorites</NavLink>
