@@ -5,7 +5,7 @@ import { GlobalContext } from '../Context/Index';
 const Details = () => {
  const {id}=useParams();
   // console.log(id);
-  const {recipeDetails,setRecipeDetails,handelAddToFavorites}=useContext(GlobalContext);
+  const {recipeDetails,setRecipeDetails,handelAddToFavorites,favoritesList}=useContext(GlobalContext);
 
   useEffect(()=>{
     async function getRecipesDetails(){
@@ -25,7 +25,7 @@ const Details = () => {
   return (
     <>
     <div className='h-max min-h-screen w-full bg-gray-200 p-5'>
-      <div className='container mx-auto py-10 grid grid-cols-1 lg:grid-cols-2 gap-10 bg-white'>
+      <div className='container mx-auto py-10 grid grid-cols-1 lg:grid-cols-2 gap-10 '>
         <div className='row-start lg:row-start-auto'>
           <div className='h-96 overflow-hidden rounded-xl group'>
             <img src={recipeDetails?.recipe?.image_url} alt={recipeDetails?.title} className='w-full h-full object-cover block group-hover:scale-105 transition-transform duration-300 transform'/>
@@ -37,9 +37,9 @@ const Details = () => {
           <p className=' text-black  '>Cook Time : {recipeDetails?.recipe?.cooking_time} minutes</p>
           <p className=' text-black  '>Servings : {recipeDetails?.recipe?.servings} persons</p>
           <div>
-            <button  className='bg-orange-600 text-black px-4 py-2 rounded-lg hover:bg-orange-700 transition-colors duration-300'>
-              Add to Favorites
-              </button>
+            <button onClick={()=>handelAddToFavorites(recipeDetails?.recipe)} className='bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700 transition-colors duration-300'>
+            {favoritesList.findIndex((item)=>item.id===recipeDetails?.recipe?.id)!==-1 ? 'Remove from Favorites' : 'Add to Favorites' }
+            </button>
           </div>
           <h2 className='text-2xl font-bold text-black mt-5'>Ingredients :</h2>
           <div className='flex flex-col gap-2'>

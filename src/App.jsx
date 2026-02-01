@@ -19,6 +19,7 @@ import Project11 from './Components/Project 11/Project11';
 import Navigation from './Components/Project 12/Navbar/Navigation';
 import Project12 from './Components/Project 12/Home/Project12';
 import Details from './Components/Project 12/Details/Details';
+import Favorites from './Components/Project 12/Favorites/Favorites';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -47,6 +48,7 @@ function App() {
              <Route path='/Navigation' element={<Navigation/>}>
                 <Route path='/Navigation' element={<Project12/>}></Route>
                 <Route path='details/:id' element={<Details/>}></Route>
+                <Route path='favorites' element={<Favorites/>}></Route>
              </Route>
 
                 {/* Navigate to Home Page When You hit a Undefined path / Url */}
