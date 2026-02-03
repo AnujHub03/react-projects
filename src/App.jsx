@@ -20,6 +20,9 @@ import Navigation from './Components/Project 12/Navbar/Navigation';
 import Project12 from './Components/Project 12/Home/Project12';
 import Details from './Components/Project 12/Details/Details';
 import Favorites from './Components/Project 12/Favorites/Favorites';
+import Navigationbar from './Components/Project 13/Pages/Navigationbar';
+import Project13 from './Components/Project 13/Pages/Project13';
+import Cart from './Components/Project 13/Pages/Cart';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -50,6 +53,10 @@ function App() {
                 <Route path='details/:id' element={<Details/>}></Route>
                 <Route path='favorites' element={<Favorites/>}></Route>
              </Route>
+              <Route path='/Navigationbar' element={<Navigationbar/>}>
+                <Route path='/Navigationbar' element={<Project13/>}></Route>
+                <Route path='cart' element={<Cart/>}></Route>
+              </Route>
 
                 {/* Navigate to Home Page When You hit a Undefined path / Url */}
                   <Route path='*' element={<Navigate to='/'></Navigate>}></Route>
