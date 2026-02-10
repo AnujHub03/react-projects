@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router";
+import CartTile from "./Cart-Tile/CartTile";
 
 const Cart = () => {
   const [totalCart, setTotalCart] = useState(0);
@@ -18,10 +19,9 @@ const Cart = () => {
         {state && state.items.length > 0 ? (
           <div className="min-h-[80vh] grid md:grid-cols-2 max-w-6xl mx-auto ">
             <div className="flex flex-col justify-center items-center p-3">
-              {
-                // state.items.map(item =>
-                //   <CartTile key={item.id} item={item} />)
-              }
+              {state.items.map((item) => (
+                <CartTile key={item.id} item={item} />
+              ))}
             </div>
             <div className="flex flex-col justify-center items-center p-3">
               <h2 className="text-xl font-semibold mb-2">
