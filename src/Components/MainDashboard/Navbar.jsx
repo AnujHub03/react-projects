@@ -85,7 +85,7 @@ const Navbar = () => {
         <li>
           <a>Hard Projects</a>
           <ul className="p-2">
-            <li className=" hover:bg-orange-600 rounded-xl" onClick={closeAllDetails}><NavLink to="/Project12">Project 12</NavLink></li>
+            <li className=" hover:bg-orange-600 rounded-xl" onClick={closeAllDetails}><NavLink to="/Navigation">Project 12</NavLink></li>
             <li className=" hover:bg-orange-600 rounded-xl" onClick={closeAllDetails}><NavLink to="/Navigationbar">Project 13</NavLink></li>
 
             </ul>
@@ -126,7 +126,7 @@ const Navbar = () => {
         <details ref={addToRefs}>
           <summary className="cursor-pointer">Hard Projects</summary>
           <ul className="p-2 w-28 text-center z-50">
-            <li className=" hover:bg-orange-600 rounded-xl" onClick={closeAllDetails}><NavLink to="/Project12">Project 12</NavLink></li>
+            <li className=" hover:bg-orange-600 rounded-xl" onClick={closeAllDetails}><NavLink to="/Navigation">Project 12</NavLink></li>
             <li className=" hover:bg-orange-600 rounded-xl" onClick={closeAllDetails}><NavLink to="/Navigationbar">Project 13</NavLink></li>
 
           </ul>
