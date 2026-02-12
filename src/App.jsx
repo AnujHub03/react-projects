@@ -23,6 +23,7 @@ import Favorites from './Components/Project 12/Favorites/Favorites';
 import Navigationbar from './Components/Project 13/Pages/Navigationbar';
 import Project13 from './Components/Project 13/Pages/Project13';
 import Cart from './Components/Project 13/Pages/Cart';
+import About from './Components/About/About';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -31,6 +32,9 @@ function App() {
     createRoutesFromElements(
          <Route path='/' element={<Navbar/>}>
             <Route path='/' element={<HomePage/>}></Route>
+
+            {/* About Page */}
+              <Route path='/About' element={<About/>}></Route>
 
                {/* Easy Projects */}   
               <Route path='/Project1' element={<Project1/>}></Route>
