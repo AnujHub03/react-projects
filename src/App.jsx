@@ -24,6 +24,7 @@ import Navigationbar from './Components/Project 13/Pages/Navigationbar';
 import Project13 from './Components/Project 13/Pages/Project13';
 import Cart from './Components/Project 13/Pages/Cart';
 import About from './Components/About/About';
+import AboutEasy from './Components/About/AboutEasy';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -35,6 +36,7 @@ function App() {
 
             {/* About Page */}
               <Route path='/About' element={<About/>}></Route>
+              <Route path='/AboutEasy' element={<AboutEasy/>}></Route>
 
                {/* Easy Projects */}   
               <Route path='/Project1' element={<Project1/>}></Route>

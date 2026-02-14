@@ -31,7 +31,7 @@ const About = () => {
             Project 1 to 5 .{" "}
             <Link
               className="text-blue-200 text-lg hover:text-blue-800"
-              // to={"/aboutEasy"}
+              to={"/AboutEasy"}
             >
               {" "}
               More...
