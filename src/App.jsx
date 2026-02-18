@@ -26,6 +26,7 @@ import Cart from './Components/Project 13/Pages/Cart';
 import About from './Components/About/About';
 import AboutEasy from './Components/About/AboutEasy';
 import AboutP1 from './Components/About/AboutP1';
+import AboutP2 from './Components/About/AboutP2';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -39,6 +40,7 @@ function App() {
               <Route path='/About' element={<About/>}></Route>
               <Route path='/AboutEasy' element={<AboutEasy/>}></Route>              
               <Route path='/AboutP1' element={<AboutP1/>}></Route>              
+              <Route path='/AboutP2' element={<AboutP2/>}></Route>              
 
                {/* Easy Projects */}   
               <Route path='/Project1' element={<Project1/>}></Route>
