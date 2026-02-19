@@ -48,10 +48,10 @@ const Project2 = () => {
             <h3>{type==='rgb' ?'RGB color :' :'HEX color :'}</h3>
             <h1>{color}</h1>
           </div>
-      </div>
       <div className="text-center p-5 bg-gray-600 mt-52 w-9/12 m-auto rounded-3xl bg-opacity-70 border-2 border-transparent">
             <p className='text-white'> If you wana more about project then click here : <Link className='text-blue-200 text-lg hover:text-blue-800' to={"/aboutp2"}> More...</Link></p>
           </div>
+      </div>
     </>
   )
 }
