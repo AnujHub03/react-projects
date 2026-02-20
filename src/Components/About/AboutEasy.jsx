@@ -1,6 +1,7 @@
 import React from "react";
 import AboutP1 from "./AboutP1";
 import AboutP2 from "./AboutP2";
+import AboutP3 from "./AboutP3";
 
 const AboutEasy = () => {
   const back = () => {
@@ -15,6 +16,9 @@ const AboutEasy = () => {
           </div>
           <div className="mt-5">
             <AboutP2 />
+          </div>
+          <div className="mt-5">
+            <AboutP3 />
           </div>
         <div className="flex justify-center mt-10">
           <button

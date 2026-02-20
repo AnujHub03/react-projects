@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FaStar } from "react-icons/fa6";
 import "./style.css"
+import { Link } from 'react-router';
 
 const Project3 = ({noOfStar}) => {
   // console.log("Star", noOfstar);
@@ -39,7 +40,9 @@ const Project3 = ({noOfStar}) => {
       })
     }
         </div>
-        
+         <div className="text-center p-5 bg-gray-600 mt-96 w-9/12 m-auto rounded-3xl bg-opacity-70 border-2 border-transparent">
+            <p className='text-white'> If you wana more about project then click here : <Link className='text-blue-200 text-lg hover:text-blue-800' to={"/aboutP3"}> More...</Link></p>
+          </div>
     </div>
   )
 }
