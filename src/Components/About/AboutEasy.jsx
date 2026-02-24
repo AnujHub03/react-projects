@@ -3,6 +3,7 @@ import AboutP1 from "./AboutP1";
 import AboutP2 from "./AboutP2";
 import AboutP3 from "./AboutP3";
 import AboutP4 from "./AboutP4";
+import AboutP5 from "./AboutP5";
 
 const AboutEasy = () => {
   const back = () => {
@@ -23,6 +24,9 @@ const AboutEasy = () => {
           </div>
           <div className="mt-5">
             <AboutP4 />
+          </div>
+          <div className="mt-5">
+            <AboutP5 />
           </div>
         <div className="flex justify-center mt-10">
           <button
