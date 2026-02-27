@@ -44,7 +44,9 @@ const About = () => {
           <p className="text-2xl mt-4">From -</p>
           <p className="text-xl ml-20">
             Project 6 to 11 .{" "}
-            <Link className="text-blue-200 text-lg hover:text-blue-800">
+            <Link className="text-blue-200 text-lg hover:text-blue-800"
+             to={"/AboutMedium"}
+            >
               {" "}
               More...
             </Link>{" "}
