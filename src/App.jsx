@@ -32,6 +32,7 @@ import AboutP4 from './Components/About/AboutP4';
 import AboutP5 from './Components/About/AboutP5';
 import AboutMedium from './Components/About/AboutMedium';
 import AboutP6 from './Components/About/AboutP6';
+import AboutP7 from './Components/About/AboutP7';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -51,6 +52,7 @@ function App() {
               <Route path='/AboutP5' element={<AboutP5/>}></Route>              
               <Route path='/AboutMedium' element={<AboutMedium/>}></Route>              
               <Route path='/AboutP6' element={<AboutP6/>}></Route>              
+              <Route path='/AboutP7' element={<AboutP7/>}></Route>              
 
                {/* Easy Projects */}   
               <Route path='/Project1' element={<Project1/>}></Route>
