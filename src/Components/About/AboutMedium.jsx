@@ -1,6 +1,7 @@
 import React from "react";
 import AboutP6 from "./AboutP6";
 import AboutP7 from "./AboutP7";
+import AboutP8 from "./AboutP8";
 
 const AboutMedium = () => {
   const back = () => {
@@ -15,6 +16,9 @@ const AboutMedium = () => {
           </div>
           <div className="mt-5">
           <AboutP7/>
+          </div>
+          <div className="mt-5">
+          <AboutP8/>
           </div>
           <div className="flex justify-center mt-10">
           <button
