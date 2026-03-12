@@ -44,8 +44,9 @@ const About = () => {
           <p className="text-2xl mt-4">From -</p>
           <p className="text-xl ml-20">
             Project 6 to 11 .{" "}
-            <Link className="text-blue-200 text-lg hover:text-blue-800"
-             to={"/AboutMedium"}
+            <Link
+              className="text-blue-200 text-lg hover:text-blue-800"
+              to={"/AboutMedium"}
             >
               {" "}
               More...
@@ -55,8 +56,13 @@ const About = () => {
             Finally there are some Hard level projects.{" "}
           </p>
           <p className="text-2xl mt-4">From -</p>
-          <p className="text-xl ml-20"> Project 12 - 13 . 
-             <Link className="text-blue-200 text-lg hover:text-blue-800">
+          <p className="text-xl ml-20">
+            {" "}
+            Project 12 - 13 .
+            <Link
+              className="text-blue-200 text-lg hover:text-blue-800"
+              to={"/AboutHard"}
+            >
               {" "}
               More...
             </Link>{" "}
