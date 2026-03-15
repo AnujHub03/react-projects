@@ -1,17 +1,16 @@
-import React, { useContext } from 'react'
-import { NavLink, Outlet } from 'react-router'
-import { GlobalContext } from '../Context/Index';
+import React, { useContext } from "react";
+import { NavLink, Outlet } from "react-router";
+import { GlobalContext } from "../Context/Index";
 
 const Navigation = () => {
-  const {searchParams,setSearchParams ,handelSubmit}=useContext(GlobalContext);
+  const { searchParams, setSearchParams, handelSubmit } =
+    useContext(GlobalContext);
   console.log(searchParams);
   return (
     <>
       <div className="navbar bg-gray-400 shadow-sm flex flex-col md:flex-row">
-
         {/* Top row: Logo + Search */}
         <div className="flex w-full flex-col md:flex-row md:items-center">
-
           {/* Logo */}
           <div className="navbar-start md:w-auto">
             <NavLink
@@ -24,7 +23,10 @@ const Navigation = () => {
 
           {/* Search */}
           <div className="navbar-center w-full md:flex-1 mt-2 md:mt-0">
-            <form onSubmit ={handelSubmit} className="w-full flex justify-center">
+            <form
+              onSubmit={handelSubmit}
+              className="w-full flex justify-center"
+            >
               <input
                 type="text"
                 placeholder="Search..."
@@ -44,14 +46,16 @@ const Navigation = () => {
             <li className="hover:bg-teal-400 rounded-xl">
               <NavLink to="favorites">Favorites</NavLink>
             </li>
+            <li className=" hover:bg-teal-400 rounded-xl">
+              <NavLink to="/AboutP12">About</NavLink>
+            </li>
           </ul>
         </div>
-
       </div>
 
       <Outlet />
     </>
-  )
-}
+  );
+};
 
-export default Navigation
+export default Navigation;
