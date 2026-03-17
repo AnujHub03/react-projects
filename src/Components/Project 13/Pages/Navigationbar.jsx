@@ -18,6 +18,9 @@ const Navigationbar = () => {
             <li className="cursor-pointer hover:text-orange-600">
               <Link to="cart">Cart</Link>
             </li>
+            <li className="cursor-pointer hover:text-orange-600">
+              <Link to="/aboutP13">About</Link>
+            </li>
           </ul>
         </nav>
       </div>
