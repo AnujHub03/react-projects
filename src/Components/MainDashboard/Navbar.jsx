@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { NavLink, Outlet, useLocation } from "react-router";
 import "./Navbar.css";
+import Footer from "./Footer";
 
 const Navbar = () => {
   const location = useLocation();
@@ -287,6 +288,7 @@ const Navbar = () => {
         </div>
       </div>
       <Outlet />
+      <Footer/>
     </>
   );
 };
