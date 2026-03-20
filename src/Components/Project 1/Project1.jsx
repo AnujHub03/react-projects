@@ -91,10 +91,6 @@ const Project1 = () => {
           </p>
         </div>
       </div>
-
-      <div className="text-center text-sm p-3 bg-black text-white">
-        <h1>heading3:"© 2025 All Rights Reserved by Anuj"</h1>
-      </div>
     </>
   );
 };
